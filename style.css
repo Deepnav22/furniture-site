@@ -1,0 +1,213 @@
+/* header section */
+.navbar-brand img {
+      width: 150px;
+}
+  /* search btn */
+.form-control::placeholder {
+      color: #6c757d;
+}
+.search-btn{
+      border: none;
+      background: none;
+      color: #388b6f;
+      font-size: 18px;
+} 
+.navbar-collapse ul li a{
+      color: #388b6f;
+}
+.navbar-collapse ul li a:hover, .nav-item .active{
+      background-color: green !important;
+      color: white !important;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #388b6f;
+      cursor: pointer;
+}
+@media (max-width: 992px) {
+      .navbar .navbar-brand {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+      }
+}
+@media (min-width: 993px) {
+      .navbar .navbar-brand {
+          position: static;
+          transform: none;
+          margin-left: 0;
+      }
+}
+  
+
+/* home section */
+.home {
+      min-height: 100vh;
+      background: url(../image/background-img.png) center center/cover;
+      background-repeat: no-repeat;
+}
+    
+.custom-btn {
+      font-weight: bold;
+      letter-spacing: 1px;
+      border: 2px solid #388b6f;
+      color: #388b6f;
+      background-color: white;
+      border-radius: 5px;
+      transition: 0.5s;
+}
+    
+.custom-btn:hover {
+      background-color: #388b6f;
+      color: white;
+      border: none;
+}
+
+/* top section */
+.offer-box {
+      transition: all 0.3s ease;
+      cursor: pointer;
+}
+.offer-box:hover {
+      background-color: #e9ecef;
+}
+ 
+/* product section */
+.card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s ease-in-out;
+}
+
+/* banner section */ 
+.banner {
+      width: 100%;
+      height: 60vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                  url(../image/banner.png) no-repeat center center/cover;
+}
+    
+.banner-content {
+      padding: 150px 10% 10px;
+}
+    
+.custom-banner-btn:hover {
+      background-color: #388b6f;
+      border: none;
+}
+
+/* gallery section */
+.gallery-img {
+      transition: transform 0.3s ease;
+      cursor: pointer;
+}
+.gallery-img:hover {
+      transform: translateY(-10px);
+}
+/* contact section */
+.submit-btn {
+      transition: 0.5s ease;
+}
+  
+.submit-btn:hover {
+      padding-right: 2.5rem;
+      padding-left: 2.5rem;
+}
+  
+/*footer section  */
+.bg-light{
+      background-color: #e5e9ed !important;
+}
+footer .list-unstyled li i{
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 20px;
+}
+footer .list-unstyled li i:hover {
+      color: white;
+      background: #388b6f;
+      box-shadow: 0 0 10px green;
+}
+.footer p{
+      margin-left: 40px;
+}
+
+/* product page */
+.productlist{
+      display: flex;
+      align-items: center;
+      justify-content: center;   
+      position: sticky;
+      top: 0;
+      z-index: 1;
+}
+.productlist ul li a{
+      letter-spacing: 1px; 
+      color: #388b6f;    
+}
+.productlist ul li a:hover{
+      background-color: green;
+      color: white;
+      box-shadow: 0 0 10px #388b6f;
+      border-radius: 10px;
+}
+.productlist .dropdown{
+      display: inline-block !important;
+}
+.productlist .dropdown-menu {
+      display: none !important;
+      position: absolute !important;
+      background-color: #f9f9f9;
+      z-index: 1;
+}   
+.productlist .dropdown:hover .dropdown-menu {
+      display: block !important;
+}
+.dropdown li ul li a{
+      color: black;
+}
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+.btn-outline-info{
+      color: green;
+      border: 1px solid green;
+}
+.btn-outline-info:hover{
+      color: white;
+      background-color: #388b6f;
+      border: none;
+      box-shadow: 0 0 10px #388b6f;
+}
+.product ul li a{
+      color: green;
+}
+.product ul li a:hover, .product ul li .active{
+      color: white;
+      background-color: green;
+      border: none;
+      box-shadow: 0 0 10px green;
+      border-radius: 10px;
+}
+
+/* review page */
+.star-rating {
+      direction: rtl;
+      display: inline-flex;
+      font-size: 1.8rem;
+      cursor: pointer;
+}
+.star-rating input[type="radio"] {
+      display: none;
+}
+.star-rating label {
+      color: #cccccc;
+      margin: 0 0.1rem;
+      transition: color 0.2s;
+}
+.star-rating input[type="radio"]:checked ~ label,
+    .star-rating label:hover,
+    .star-rating label:hover ~ label {
+      color: #ffc107;
+}
+.form-label {
+      font-weight: 500;
+}
